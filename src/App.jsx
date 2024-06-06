@@ -15,19 +15,20 @@ const MovieReviews = lazy(() => import('./components/MovieReviews/MovieReviews')
 function App() {
   return (
     <Router>
-      <Navigation />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/movies" element={<MoviesPage />} />
+    <Navigation />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/movies" element={<MoviesPage />} />
+        <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
           <Route path="cast" element={<MovieCast />} />
           <Route path="reviews" element={<MovieReviews />} />
-          <Route path="/movies/:movieId/*" element={<MovieDetailsPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-          
-        </Routes>
-      </Suspense>
-    </Router>
+        </Route>
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </Suspense>
+  </Router>
+   
   );
 }
 
