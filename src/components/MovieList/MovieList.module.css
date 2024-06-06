@@ -1,0 +1,28 @@
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    
+  }
+  
+  .item {
+    list-style: none;
+    flex: 1 1 calc(25% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .item p {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }

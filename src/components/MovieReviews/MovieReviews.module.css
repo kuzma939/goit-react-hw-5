@@ -1,0 +1,21 @@
+.container {
+    padding: 20px;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .item {
+    list-style: none;
+  }
+  
+  .item h3 {
+    margin: 0 0 10px;
+  }
+  
+  .item p {
+    margin: 0;
+  }
