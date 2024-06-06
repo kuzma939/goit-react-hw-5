@@ -1,6 +1,6 @@
 import axios from 'axios';
-
-const API_KEY = import.meta.env.REACT_TMDB_API_KEY;
+const API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOWI3YTRkMTU2YjQzZmJmY2IzZDZiMWI2YjhhMjg2OSIsInN1YiI6IjY2MjYwN2ExMmUyYjJjMDE2MzY2YzNhZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.DCXTjqR4WGMSjuwgSUwPue9aExYzezKxcMhPgFTNSlw"
+//const API_KEY = import.meta.env.REACT_TMDB_API_KEY;
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 axios.defaults.baseURL = BASE_URL;
